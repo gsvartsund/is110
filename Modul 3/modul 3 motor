@@ -1,0 +1,41 @@
+
+public class Motor
+{
+    // instance variables - replace the example below with your own
+    private Motor motor;
+    private boolean isOn;  
+    
+    public void startCar()
+    {
+        isOn = true;
+    }
+    
+    public void stopCar()
+    {
+        isOn = false;
+    }
+    
+    public boolean getState()
+    {
+        return isOn;
+    }
+    
+    public void printCarStatus()
+    {
+        System.out.println("Car is  ");
+        if (getState()){
+            System.out.print("on");
+        }
+        else if (!getState()){
+            System.out.print("off");
+        }
+        System.out.println("Lights are  ");
+        if (getState()){
+            System.out.print("on");
+        }
+        else if (!getState()){
+            System.out.print("off");
+        }
+        }
+    }
+
