@@ -1,0 +1,32 @@
+
+public class Lastebil
+{
+    // instance variables - replace the example below with your own
+    private Motor motor;
+
+    /**
+     * Constructor for objects of class Lastebil
+     */
+    public Lastebil()
+    {
+        // initiaise instance variables
+        motor = new Motor();
+        motor.printCarStatus();
+    }
+    
+    public void get()
+    {
+        motor.printCarStatus();
+    }
+    
+    public void startCar()
+    {
+        motor.startCar();
+    }
+    
+    public void stopCar()
+    {
+        motor.stopCar();
+    }
+
+}
