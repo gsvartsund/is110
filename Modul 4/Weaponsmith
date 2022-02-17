@@ -1,0 +1,54 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+public class Weaponsmith
+{
+     private ArrayList<String> items;
+        //Her legger jeg til forskjellige items, samt en ny arraylist.
+     public Weaponsmith(){
+         items = new ArrayList<>();
+         addItem("Sword");
+         addItem("Mace");
+         addItem("Knife");
+         addItem("Shield");
+         addItem("Spear");
+         addItem("Club");
+         
+     }
+    //metode for å legge til nye items
+     public void addItem(String itemname){
+         items.add(itemname);
+     }
+    //metode for å se hvor mange items som er i lista
+     public int getNumberOfFiles(){
+         return items.size();
+     }
+    //metode for å liste opp ett item i en string
+     public void listItem(int index){
+         if(index >= 0 && index < items.size()){
+             String itemname = items.get(index);
+             System.out.println(itemname);
+         }
+     }
+    //metode for å fjerne ett item
+     public void removeItem(int index)
+     {
+         if(index >= 0 && index < items.size()) {
+             items.remove(index);
+         }
+     }
+     //Her har vi en for loop som går gjennom alle itemsa og printer de ut
+     public void print(){
+         for(String itemname : items){
+             System.out.println(itemname);
+         }
+     }
+     //her har vi en iterator for å fjerne ting i listen, du fjerner da indexen
+     public void removeItem(String item){
+         Iterator<String> it = items.iterator();
+         while(it.hasNext()){
+             if(it.next().equals(item));{
+                 it.remove();
+             }
+         }
+     }
+    }
