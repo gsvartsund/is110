@@ -1,0 +1,29 @@
+import java.util.Arrays;
+public class Moduliussyvius
+{
+    private int x;
+
+    /**
+     * Constructor for objects of class Moduliussyvius
+     */
+    public Moduliussyvius()
+    {
+         String []Kinosete = new String [5];
+         Kinosete[0] = "Alex";
+         Kinosete[1] = "Georg";
+         Kinosete[2] = "Chris";
+         Kinosete[3] = "Gustav";
+         Kinosete[4] = "Sigurd";
+         for(int i = 0; i < Kinosete.length; i++){
+             System.out.println(Kinosete[i]);
+         }
+    }
+    
+    //Hvis den er 1 blir den riktig, hvis den er noe annet blir den feil.
+    public void Jardar(){
+        String jardar = 1 == 1? "True"  : "False";
+        System.out.println(jardar);        
+    }
+}
+        
+    
